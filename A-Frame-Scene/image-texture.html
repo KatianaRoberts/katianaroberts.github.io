@@ -16,6 +16,7 @@
 		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
 		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
 		<img id="images" src="images/images.png" crossorigin="anonymous" />
+		<img id="train" src="images/train.png" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -58,21 +59,14 @@
 		shadow = "cast: true; receive: true">
 	</a-sphere>
 	
-	<a-sphere
-		radius = "0.5"
-		position = "2 0.5 -3"
-		rotation = "0 45 0"
-		material = "src: #images"
+<a-box
+		width = "2" height = "1" depth = "1"
+		position = "-1 0.5 -3"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #train"
 		shadow = "cast: true; receive: true">
-	</a-sphere>
-	
-	<a-sphere
-		radius = "0.5"
-		position = "2 0.5 -3"
-		rotation = "0 45 0"
-		material = "src: #images"
-		shadow = "cast: true; receive: true">
-	</a-sphere>
+	</a-box>
 	
 </a-scene>
 </body>
