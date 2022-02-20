@@ -8,8 +8,8 @@
 		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
         <img id="field" src="images/Field.jpg" crossorigin="anonymous" />
         <img id="garden" src="images/Garden.jpg" crossorigin="anonymous" />
-        <img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
-        <img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
+        <img id="mall" src="images/Mall.jpg" crossorigin="anonymous" />
+        <img id="japan" src="images/Japan.jpg" crossorigin="anonymous" />
 		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
 		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
 		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
@@ -21,38 +21,42 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-box
+      <a-entity
+	gltf-model="models/Flower.glb"
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #field"      
-      ></a-box>  
-     <a-box
+      </a-entity>
+     <a-entity
+	gltf-model="models/Flower.glb"
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #garden"      
-      ></a-box>  
-     <a-box
+      </a-entity> 
+     <a-entity
+	gltf-model="models/Shopping cart.glb"
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
-      ></a-box> 
-     <a-box
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #mall"     
+      </a-entity>
+     <a-entity
+	gltf-model="models/Japanese Torii.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
-      ></a-box> 
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #japan"     
+      </a-entity>
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
