@@ -21,7 +21,7 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-entity
+      <a-box
 	gltf-model="models/Flower.glb"
         position="-2 2 -2"
         scale=".2 .2 .2"     
@@ -29,8 +29,8 @@
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #field"      
-      </a-entity>
-     <a-entity
+      ></a-box> 
+     <a-box
 	gltf-model="models/Flower.glb"
         position="2 2 -2"
         scale=".2 .2 .2" 
@@ -38,8 +38,8 @@
         value="Three O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #garden"      
-      </a-entity> 
-     <a-entity
+      ></a-box>  
+     <a-box
 	gltf-model="models/Shopping cart.glb"
         position="0 2 2.5"
         scale=".2 .2 .2" 
@@ -47,8 +47,8 @@
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #mall"     
-      </a-entity>
-     <a-entity
+      ></a-box> 
+     <a-box
 	gltf-model="models/Japanese Torii.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
@@ -56,7 +56,7 @@
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #japan"     
-      </a-entity>
+      ></a-box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
