@@ -10,6 +10,7 @@
         <img id="garden" src="Garden.jpg" crossorigin="anonymous" />
         <img id="mall" src="Mall.jpg" crossorigin="anonymous" />
         <img id="japan" src="Japan.jpg" crossorigin="anonymous" />
+	<img id="rainbow" src="Rainbow.jpg" crossorigin="anonymous" />
 		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
 		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
 		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
@@ -26,32 +27,35 @@
         position="-2 2 -2"
         scale="1 1 1"     
         rotation="0 45 0"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #field"      
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #rainbow"      
       ></a-entity> 
-     <a-box
+     <a-entity
+	gltf-model="Flower.glb"
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #garden"      
-      ></a-box>  
-     <a-box
+      ></a-entity>   
+     <a-entity
+	gltf-model="Shopping cart.glb"
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #mall"     
-      ></a-box> 
-     <a-box
+      ></a-entity>  
+     <a-entity
+	gltf-model="Japanese Torii.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #japan"     
-      ></a-box> 
+      ></a-entity>  
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
